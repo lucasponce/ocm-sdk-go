@@ -3,6 +3,1296 @@
 This document describes the relevant changes between releases of the OCM API
 SDK.
 
+## 0.1.1 Sep 08 2026
+
+- ROSAENG-13732 | feat: Implement BYO firewall rule endpoint verification
+- chore: bump ocm-api-model to v0.0.465
+- Update CONTRIBUTING.md
+- chore: bump version to v0.1.509
+- chore: bump ocm-api-model to v0.0.464
+- ROSAENG-62396 | chore: bump version to v0.1.508
+- ROSAENG-61162 | feat: changes to support BYO firewall for OSD-GCP deployments
+- chore: bump ocm-api-model to v0.0.463
+- ROSAENG-61032 | feat: changes to support SpotMarketOptions for ROSA HCP
+- ROSAENG-62396 | fix: automated release github workflow
+- Revert "Release 0.1.502"
+- ROSAENG-61032 | task: Release 0.1.502
+- ROSAENG-61032 | task: ocm-api/sdk changes to support SpotMarketOptions for ROSA HCP
+- chore: bump ocm-api-model to v0.0.462
+- ROSAENG-59819 | feat: bump ocm-api-model to v0.0.461 and regenerate severity constants
+- chore: bump ocm-api-model to v0.0.459
+- chore: bump ocm-api-model to v0.0.457
+- ci: add automated release pipeline
+- OCM-24592 | chore: release ocm-sdk-go v0.1.501
+- OCM-24592 | chore: release preparation for v0.0.456
+- chore: bump version to 0.1.500
+- OCM-23443 | feat: add ZeroEgress into AWS
+- Add one-command build/setup: README.md (Quick Start section)
+- Add Dependabot configuration for dependency security scanning
+- Improve README structure: add missing Installation, Usage, and Development sections
+- Add agent-readiness improvements: AGENTS.md, CLAUDE.md, PR/issue templates, .gitignore, pre-commit hooks
+- Release v0.1.499
+- OCM-22967 | fix: removing pgx dependency
+- Release v0.1.498
+- chore: update ocm-api-model to 0.0.453
+- Release v0.1.497
+- OCM-22426 | chore: update ocm-api-model to 0.0.452
+- chore: Release 0.1.496
+- Bump api model to v0.0.451
+- chore: Release 0.1.495
+- Bump api model to v0.0.450
+- chore: prepare next release 0.1.494
+- chore: update ocm api model to v0.0.449
+- chore: Release v0.1.493
+- chore: update ocm api model to v0.0.448
+- chore: Release v0.1.492
+- chore: update ocm api model to v0.0.447
+- chore: Release v0.1.491
+- chore: update ocm api model to v0.0.446
+- Release v0.1.490
+- Add ExcludedNamespaceSelectors to ingress type
+- Release 0.1.489
+- OCM-20938 | chore: update ocm-api-model to v0.0.443
+- release version 0.1.488
+- chore: update ocm-api-model to v0.0.442
+- OCM-21643 | chore: update golang-ci-lint version to latest stable v2.8.0
+- release 0.1.487
+- Revert "OCM-21643 | chore: update golang-ci-lint version to latest stable v2.8.0"
+- OCM-21643 | chore: update golang ci lint version
+- update API model to 0.0.441
+- release v0.1.486
+- update API model to 0.0.440
+- release 1.485
+- add patch operation for version gates to allow partial updates
+- Release v0.1.484
+- fix lint issues
+- Enable the OCM linter
+- Add a linter for the ocm logger Linting issues in using ocm logger were not detected by the linter because the logger methods are not ending with `f` and the first parameter is not the string format. This PR adds a custom linter to detect them.
+- bump model to v0.0.438
+- OCM-20466 | feat: Add new fields to environment
+- update ocm-api-model to version 0.0.437
+- chore: auto generated files
+- update ocm-api-model to version 0.0.436
+- Add ROSA and ARO approvers
+- Release v0.1.480
+- Update ocm api model to v0.0.435
+- Release v0.1.479
+- Update ocm api model to v0.0.434 ARO-HCP API models split
+- feat: add OCM object response helpers for testing framework
+- Release v0.1.478
+- OCM-689: Propagate RBAC endpoints to OCM-SDK
+- fix env var detection
+- wif resource scoped permissions
+- chore: bump version
+- Update CHANGES.md for 0.1.476 Release
+- OCM-17788 | feat: image mirrors for rosa hcp
+- release v0.1.475
+- update API model to v0.0.430
+- OCM-16908 | chore: Update version of SDK
+- OCM-16908 | chore: Update to v0.0.429 of API model
+- Further enhancements to CONTRIBUTING.md reflecting changes in ocm-api-model
+- Update version to 0.1.473
+- Use ocm-api-model v0.0.426
+- update api model to latest
+- Reorganize the CONTRIBUTING.md file, remove unecessary instructions and add explenations
+- Add a suggestion to run the git push from the root of the repo
+- Add git hook to validate a pushed tag matches the Version constant
+- Add bump version script and update the version file
+- go mod tidy
+- Use latest ocm-api-model
+- chore: update ocm api metamodel to v0.0.422
+- Add an optional commit SHA argument to the update-model script
+- Update the release process of the ocm-api-model in the CONTRIBUTING file
+- Add a script to simplify current update process
+- chore: release v0.1.469
+- bump(ocm-api-model): bump the ocm api model to latest commit https://github.com/openshift-online/ocm-api-model/commit/37dc3401307a53d0b4659d5d4f589ad5e15bef5a
+- OCM-16570 | chore: update changes and version for release 0.1.468
+- OCM-16581 | chore: upgrade golangci lint to v2 and fix lint errors
+- leadership flag enhancement: precheck handler added
+- generated
+- add ocm-api-model/client-api as dep
+- add metamodule submodule to have repeatable and externally detectable levels of metamodel
+- add new generation and makefile scripts
+- Release v0.1.467
+- Add Logtype to Notification details request type
+- add macgregor, cristianoveiga to owners/approvers
+- ARO-17598: generate clients for latest model update
+- Update gh setup-python to latest version
+- add standard prow artifacts for integration
+- chore: bump version to 0.1.465
+- OCM-15122 | feat: add `RhRegionID` into `Subscription` and  `ClusterAuthorizationRequest`
+- updated third-party dependencies
+- Release v0.1.464
+- Bump model to version 0.0.416
+- Release v0.1.463
+- bump ocm-api-model to v0.0.415
+- New release v0.1.462
+- ARO-15783: Add node pools and node pool status to aro-hcp
+- ARO-15553 | Update model and metalmodel
+- chore: release 0.1.460
+- chore: update ocm-api-model version
+- stop retrying generally on EOF and connection reset
+- OCM-13888 | fix: Ensure labels for metrics correctly reference service name in path and not api version
+- update version
+- OCM-13846 | (chore) update model version
+- chore: Release v.0.1.458
+- ARO-14861: Update model and metamodel
+- Release v0.1.457
+- fix: initiate context through the initial supplied one
+- Update version and release notes
+- Update model to 0.0.409
+- Bump version
+- OCM-12069 | (chore): Update model version
+- Bump version
+- OCM-12069 | (feat): Add cluster migrations with examples
+- bump version to 0.1.453
+- chore: bump to ocm-api-model 0.0.406
+- Add ARO HCP v1alpha1 root resource and changes required for derived structs
+- bump version to 0.1.451
+- chore: bump to ocm-api-model 0.0.404
+- chore: release v0.1.450
+- chore: bump to ocm-api-model 0.0.403
+- bump version to 0.1.449
+- chore: bump to ocm-api-model 0.0.402
+- OCM-12240 | chore: adjust cluster example
+- OCM-12240 | chore: Release v0.1.448
+- OCM-12240 | feat: include hcp shared vpc support
+- chore: release v0.1.447
+- chore: synchronise to ocm-api-model 0.0.400
+- ARO-7207 | chore: release v0.1.446
+- chore: synchronise to ocm-api-model 0.0.399
+- chore: update golangci-lint in GH action to 1.61.0
+- gcp-psc update and version bump (#1002)
+- Add FedRAMP example (#1000)
+- OSDEV-1691: Bump version and added new changes
+- Updated version in makefile and generate files
+- OSDEV-1691: Bump version and added new changes
+- chore: bump version to 0.1.442
+- OCM-10734 | feat: bump api model to v0.0.395
+- bump version to 0.1.441 (#996)
+- chore: Release v0.1.440
+- OCM-10883 | chore: bump api model to v0.0.393
+- OCM-10883 | feat: include manifests example
+- OCM-10939 | chore: bump metamodel to v0.0.61
+- chore: release v0.1.439
+- chore: bump to ocm-api-model 0.0.392
+- chore: release v0.1.438
+- chore: bump to ocm-api-model 0.0.391
+- bump version to 0.1.437 (#988)
+- chore: bump to ocm-api-model 0.0.387 (#987)
+- chore: Release 0.1.436
+- chore: Bump model into v0.0.389
+- bump version to 0.1.435
+- Update Makefile
+- chore: bump ocm-api-model to v0.0.388
+- bump version to 0.1.434 (#983)
+- chore: bump to ocm-api-model 0.0.387 (#982)
+- bump version to 0.1.433 (#981)
+- chore: bump to ocm-api-model 0.0.385 (#980)
+- Bump OCM API model version to 0.0.384
+- bump version to 0.1.432 (#976)
+- chore: bump to ocm-api-model 0.0.383 (#975)
+- bump version to 0.1.431 (#974)
+- chore: bump to ocm-api-model 0.0.382 (#973)
+-  bump version to 0.1.430
+- chore: bump to ocm-api-model 0.0.381
+- bump version to 0.1.429
+- chore: bump to ocm-api-model 0.0.380
+- bump version to 0.1.428 Signed-off-by: marcolan018 <llan@redhat.com>
+- add ec2MetadataHttpTokens to AWSNodePool Signed-off-by: marcolan018 <llan@redhat.com>
+- chore: bump to ocm-api-model 0.0.378 (#967)
+- chore: bump version and changes for 0.1.426
+- Windows support has been included to systemcertpool
+- OCM-8291 | chore: bump version and changes.md for 0.1.425
+- OCM-8291 | chore: bump windows certs
+- ARO-8404 | chore: release v0.1.424 (#963)
+- chore: synchronise to ocm-api-model 0.0.377
+- ARO-7434 | chore: release v0.1.423
+- chore: synchronise to ocm-api-model 0.0.376
+- OCM-7288 | chore: release v0.1.422
+- OCM-7288 | feat: add managementUpgrade parameters to NodePool model OCM-7374 | feat: add AdditionalAllowedPrincipals to aws model
+- OCM-5952: Server name inference for regionalized OCM redirects
+- OCM-8260 | fix: revert change to connection default URL
+- OCM-8260 | chore: Release v0.1.421
+- OCM-8022 | feat: add timestamps for rpb
+- OCM-8260 | feat: bump model to v0.0.374 and include access transparency examples
+- ARO-7210 | chore: release v0.1.420
+- chore: synchronise to ocm-api-model 0.0.373
+- OCM-7308 | chore: Added release notes for 0.1.419 release
+- OCM-7308 | feat: Generated a new version of the OCM-SDK to support KubeletConfigs on HCP MachinePools
+- OCM-6715 | chore: Release v0.1.418
+- OCM-6715 | feat: bump model to .371
+- Update CHANGES.md
+- OCM-6535 | feat: changes to support sts arbitrary policies
+- OCM-7566 | chore: update changes and bump version
+- OCM-7566 | chore: update windows cert for api.openshift.com:443
+- chore: bump SDK version to 0.1.415
+- chore: synchronise to ocm-api-model 0.0.369
+- chore: update model to v0.0.367
+- chore: remove explicit install of ginkgo in CI
+- feat: install and use ginkgo at project level
+- chore: set default Makefile target to `examples`
+- OCM-7117 | chore: Release 0.1.414
+- OCM-7117 | chore: update metamodel version in sdk to v0.060
+- Bump sdk version to 0.1.413
+- sync ocm-api-model version 366
+- Bump sdk version to 0.0.412
+- chore: synchronise to ocm-api-model 0.0.365
+- Update CHANGES.md
+- Update version of `pgx`
+- OCM-5823 | chore: release v0.1.410
+- OCM-5823 | chore: synchronise to ocm-api-model 0.0.364
+- bump the sdk to 0.1.409
+- bump the model to v0.0.363
+- chore: release 0.1.408 (#924)
+- chore: synchronise to OCM-API-MODEL 0.0.361
+- OCM-6454 | chore: Release 0.1.407
+- OCM-6454 | feat: bump model to .360 and example
+- Release v0.1.406 (#921)
+- Update CHANGES.md and version for v0.1.405
+- Bump api-model to v0.0.359
+- Bump github.com/dvsekhvalnov/jose2go from 1.5.0 to 1.6.0 in /examples
+- Bump github.com/dvsekhvalnov/jose2go from 1.5.0 to 1.6.0
+- Migrate keychain to use non-CGO libraries
+- Update CHANGES.md and version for 0.1.404
+- OCM-5822 | feat: Updating to 0.0.357
+- OCM-5976 | fix: Generated files for 0.0.356
+- OCM-5976 | feat: Updating Changes.md
+- OCM-5976 | fix: reverting change for provison shard
+- OCM-5976 | feat: Updating Changes.md
+- OCM-5976 | feat: Updating to 0.0.355
+- OCM-4965: Secure store tweaks (#905)
+- feat: release v0.1.401
+- feat: adding support for package_image in clusters_mgmt
+- Removed version line.
+- Fix the message format and update the version to 0.1.400.
+- Updated model version.
+- Generate the sdk based on the latest ocm-api-model modifications.
+- Remove Fullname search parameter from status board product, application, and service.
+- Release 0.1.399 (#902)
+- OCM-4965 | feat: Secure Store additional error handling and removal of keys (#901)
+- Update changed.md for Release 0.1.398 (#900)
+- Release 0.1.398 (#899)
+- OCM-5281 | Feat | Add regions support from ocm shards (#882)
+- OCM-2780 | fix: Move fix to CheckContentType
+- OCM-2780 | fix: Don't error when response is 204 and no content-type
+- Prepare release 0.1.397
+- Update CHANGES.md
+- Bump to OCM API v0.0.350
+- add test for connection with no authentication
+- add get cluster with unauthenticated connection example
+- feat: add unauthenticated connection builder
+- OCM-4964: Refine allowed keystores (#894)
+- Update CHANGES.md
+- OCM-1599 | feat: display availability zone types and subnet outposts
+- bump the sdk to 0.1.394
+- bump the model to v0.0.347
+- OCM-5759: Rework device auth as multi-step process
+- OCM-5759: Update example logs
+- OCM-5759: Remove references to access token
+- Remove scope
+- OCM-5759: Add device auth
+- Release 0.1.393
+- OCM-4964: Add example
+- tidy
+- OCM-4964: Error handling with no creds
+- OCM-4964: Add compression
+- OCM-4964: Remove OS specific files
+- OCM4964: Revised secure store labels
+- OCM-4946: Use single keyring impl for all OS
+- OCM-4964: Generic Secure Store Service
+- OCM-4946: use docker creds for linux
+- Clean HEAD
+- OCM-4946: Secure store darwin and linux
+- Added consts for hard coded values
+- Pointed to Red Hat prod SSO with designated clientId
+- Fix linter error on client_selector.go
+- Prepare v0.1.392 release
+- Removed unnecessary log
+- Shut down server gracefully
+- Removed client secret from the method
+- Added comments for better understanding
+- Fix linter errors
+- Remove unnecessary file
+- Add authentication using OAuth2 and PCKE
+- chore: Release v0.1.391
+- OCM-1706 | chore: bump model to v0.0.345
+- Update CHANGES.md
+- OCM-5312 | Add Platform to subnet_network_verification_type
+- Prepare v0.1.389 release
+- prepare v0.1.388 release  -Update ocm api model version to 0.0.341
+- update CHANGES.md
+- Add Platform to network_verification_type
+- chore: release 0.1.386
+- Bump model to 0.0.339
+- chore: release 0.1.385
+- Bump model to 0.0.338
+- OCM-4744 | chore: release notes for v0.1.384
+- OCM-4744 | chore: Bump the SDK to use API model version 0.0.337
+- chore: release 0.1.383
+- Bump model to v0.0.336
+- chore: release 0.1.382
+- Bump model to v0.0.335
+- Bump api-model to v0.0.334
+- OCM-3852 | chore: Release notes for SDK version 0.1.381
+- OCM-3852 | feat: Added SDK support for KubeletConfig and day 2 operations for setting podPidsLimits
+- OCM-4601 | chore: Release v0.1.380
+- OCM-4601 | chore: bump api-model to v0.0.332
+- chore: release v.0.1.379
+- OCM-3234 | chore(release): release 0.1.378
+- OCM-3234 | bump model to 0.0.330
+- OCM-4313: Update to go v1.21
+- OCM-4313: Update golang in ocm-sdk-go v1.20
+- Updated Example for Network Verifier
+- Update CHANGES.md
+- Update sdk to reflect new field in network_verification_type resource
+- chore: Release v0.1.376
+- OCM-4192 | feat: bump model to 0.0.328
+- bump version to 0.1.375 Signed-off-by: marcolan018 <llan@redhat.com>
+- add BestEffort in delete method for Cluster Signed-off-by: marcolan018 <llan@redhat.com>
+- chore(release): release 0.1.374
+- OCM-1534: Specify Backplane URL from CS API by returning the URL in the environment resource
+- feat: install and use tools at project scope level
+- Add OrganizationId to Feature review request type
+- release 0.1.372
+- Update the log entry resources from new model updates
+- Release 0.1.371
+- Add GCPMarketplaceEnabled to version type
+- chore: Release v0.1.370
+- OCM-3746 | feat: bump api-model to v0.0.322
+- OCM-2437 | feat: Added support for /api/clusters_mgmt/v1/aws_inquiries/sts_account_roles to the SDK
+- release 0.1.368
+- SDK Bump to use model v0.0.318
+- OCM-3277 | feat:Updated SDK version to 317
+- Bump ocm-api-model version to 0.0.316
+- Release 0.1.367 (#832)
+- Add DisplayName and Description to BillingModelItem (#831)
+- OCM-3548 | chore: release v0.1.367
+- OCM-3548 | feat: update windows CAs
+- Release 0.1.366 (#829)
+- Added BillingModel resource and type (#828)
+- chore: release v0.1.365
+- feat: updating ocm-sdk with adding support for new endpoints in addons_mgmt
+- chore: release v0.1.364
+- chore: release v0.1.363
+- OCM-250 | chore: Release v0.1.362 (#820)
+- OCM-250 | redact aws access_key and secret_access_key
+- chore: release v0.1.361
+- bump version to 0.1.360 Signed-off-by: marcolan018 <llan@redhat.com>
+- move PrivateHostedZoneID and PrivateHostedZoneRoleARN to AWS res Signed-off-by: marcolan018 <llan@redhat.com>
+- Update CHANGES.md
+- Bump ocm-api-model version to 0.0.306
+- Updated CHANGES.md
+- Bump ocm-api-model version to 0.0.304
+- Update CHANGES.md
+- Bump ocm-api-model
+- Update CHANGES.md
+- Update name of STS Support Jump Role
+- bump version to 0.1.355 Signed-off-by: marcolan018 <llan@redhat.com>
+- Add "UserDefined" in dns domain resource Signed-off-by: marcolan018 <llan@redhat.com>
+- OCM-209 | chore: release v0.1.354
+- Release v0.1.353 (#806)
+- Prevent connection leak from retry transport wrapper
+- chore: Release v0.1.352
+- OCM-851,OCM-2150 | feat: bump api-model to add managed ingress attributes
+- Release 0.1.351 (#800)
+- Changed delete_associated_resources to deleteAssociatedResources for account client (#799)
+- fix typo in CHANGES.md Signed-off-by: marcolan018 <llan@redhat.com>
+- bump version to 0.1.350 Signed-off-by: marcolan018 <llan@redhat.com>
+- user model version 0.0.295, change ReverveAt to ReverveAtTimestamp Signed-off-by: marcolan018 <llan@redhat.com>
+- Add DeleteAssociatedResources parameter to accounts delete endpoint
+- Update to metamodel 0.0.59
+- update changes doc and version for release 0.1.349
+- bump model to version 0.0.293
+- chore: release v0.1.348
+- chore: bump api-model to v0.0.291
+- chore: release v0.1.347
+- Bump model version to v0.0.290
+- chore: release v0.1.346
+- OCM-944 | chore: bump api model to v0.0.289
+- Release v0.1.345
+- Bump model version to v0.0.288
+- bump version to 0.1.344 Signed-off-by: marcolan018 <llan@redhat.com>
+- add HTPasswd to Cluster Signed-off-by: marcolan018 <llan@redhat.com>
+- chore: release v0.1.343
+- Bump model version to v0.0.286
+- chore: release v0.1.342
+- chore: bump model to version v0.0.285
+- chore: release v0.1.341 (#773)
+- chore: bump model to version v0.0.283 (#775)
+- Update to metamodel 0.0.58
+- Bump model version to v0.0.282
+- chore: release v0.1.340
+- Bump model version to v0.0.281
+- Release v0.1.339 (#769)
+- Bump model version to v0.0.280 (#768)
+- chore: Release v0.1.338
+- SDA-8990 | fix: api side windows CAs
+- chore: Release v0.1.337
+- SDA-8990 | fix: Replace an expired trusted CA on Windows with new ones
+- Bump version and updates CHANGES.md
+- Support audit log forwarding in cs
+- Update model version to v0.0.278
+- Release v0.1.334
+- Add delete account example
+- Bump model version to v0.0.276
+- Bump OCM API model version
+- chore: bump version and update change log for release v0.1.332
+- chore: bump model to version v0.0.273
+- chore: Release v0.1.331
+- chore: Bump api-model to v0.0.272
+- Release v0.1.330 (#752)
+- chore: Release v0.1.329
+- chore: bump ocm-api-model to v0.0.270
+- chore: Release v0.1.328
+- feat: bump api model and add delete protection example
+- chore: release v0.1.327
+- chore: bump api-model 0.0.268
+- chore: Release v0.1.326
+- chore: bump api-model to version 0.0.267
+- Release v0.1.325
+- fix: bump api model to v0.0.266
+- Release v0.1.324
+- Bump api model to 0.0.265
+- chore: release v0.1.323
+- chore: bump api model to v0.0.264
+- Release 0.1.322
+- Bump api model to 0.0.263
+- Update api model to v0.0.263 and prepare for release
+- [SDA-8369] Bump api model to 0.0.263 (#742)
+- chore: release v0.1.321
+- bump golang matrix and golangci-lint
+- chore: bump api model to v0.0.262
+- Bump golang.org/x/text from 0.3.7 to 0.3.8 in /examples
+- release v0.1.320
+- feat: [SDA-8223] updated addonsmgmt with annotations and labels
+- Bump ocm-api-model to v0.0.260
+- Bump ocm-api-model to v0.0.259
+- Release 0.1.317
+- Bump api model 0.0.257
+- chore: update changes and bump version for release 0.1.256
+- bump model to version 0.0.256
+- Bump model version and create a new release 0.1.315
+- Bump api model 0.0.254 and Release 0.1.314
+- Bump api model 0.0.253 and Release 0.1.313
+- updated version
+- better formatted
+- Update metamodel and release v0.1.312
+- chore: bump api model 0.0.252 release 0.1.311
+- chore: update change log for release 0.1.310, and bump version
+- chore: update model to 0.0.251
+- chore: update changes file for version v0.1.309
+- chore: update model to v0.0.250
+- chore: Release v0.1.308
+- chore: bumping api model to 249
+- Generated files
+- Bump ocm-api-model version + create a new release
+- Release 0.1.306 (#709)
+- Bump model to v0.0.247 (#708)
+- Release v0.1.305 (#707)
+- Use model v0.0.246 (#706)
+- chore: bump api model to v0.0.245 and release sdk v.0.1.304
+- Release 0.1.303
+- chore: release v0.1.302
+- chore: bump api model to 243
+- Release 0.1.301 (#700)
+- Update model to v0.0.241 (#699)
+- update changes for version 0.1.300
+- bump model v0.0.240
+- generated for go 1.19 and goimports 0.4.0
+- bump pr check to include golang 1.19 and goimport 0.4.0
+- Release 0.1.299
+- Release 0.1.298 Update to model v0.0.238
+- Release 0.1.297 Update to model v0.0.237
+- release 0.1.296 (#692)
+- updated model to v0.0.236 (#691)
+- Release 0.1.295 (#690)
+- Update to model 0.0.235
+- Release 0.1.294
+- Release 0.1.293
+- Release 0.1.292
+- bump sdk version to 0.1.230 and update change log
+- bump model to 0.0.230
+- Release 0.1.290
+- Add Addons Management client in SDK
+- Bump API model to 0.0.229
+- update changes for version 0.1.289
+- bump model to 0.0.228
+- Release v0.1.288
+- fix: Replace an expired trusted CA on Windows with new ones
+- Add osdfleetmgmt entry for check-pull-reqest
+- Fix OSD FM endpoint path
+- Fix version after review
+- Add OSD fleet management in SDK
+- Release 0.1.287
+- Replace deprecated ioutils calls
+- Fix gosimple lint error
+- skip osdfleetmgmt linting
+- gitignore vscode
+- Bump linter version
+- make generate results
+- Bump ocm-api-metamodel
+- Revert "Disable linter until we fix it"
+- release 0.1.286
+- Added ManagedBy property in RoleBinding type
+- bump model to 0.0.219 and update changes for version 0.1.285
+- bump model to 0.0.219
+- Bump OCM API model version: Add kubeconfig as well as server URL to provision shard
+- Bump OCM API model version to v0.0.217
+- Disable linter until we fix it
+- Bump OCM API version
+- release 0.1.281
+- Added label locator to get label by key
+- Bump ocm-api-model version: add update function to provision shard
+- Bump ocm api model version
+- Fix example
+- Bump ocm-api-model and create a release
+- release 0.1.277
+- Added capabilities property in Account_Type
+- Updated version to add delete registry credential method
+- Changed model version to latest to include delete registry credentials method
+- Release 0.1.275
+- release 0.1.274
+- release 0.1.274
+- release 0.1.273
+- updated model to v0.0.205
+- update changes doc for version release 0.1.272
+- bump model to v0.0.204
+- release 0.1.271
+- updated model to v0.0.203
+- Update gopkg.in/yaml.v3
+- release 0.1.270
+- Updated model to v0.0.202
+- Release v0.1.269
+- Update model to v0.0.201
+- authentication: Allow client credential grants with basic auth
+- Release 0.1.268
+- Update to model 0.0.200
+- release v0.1.267
+- update model v0.0.199
+- Release v0.1.265
+- Update model v0.0.132
+- windows: Update certificates
+- Fix example code.
+- Bump ocm-api-model version to 0.0.197
+- Update version of database used for tests
+- Update dependencies
+- release v0.1.264
+- update model v0.0.196
+- Release 0.1.262
+- Release 0.1.262
+- Update to model 0.0.194
+- Updated to version 0.0193
+- Release 0.1.260
+- Update to model 0.0.191
+- Release 0.1.259
+- Update to model 0.0.190
+- Update Release to v0.1.258
+- Update model v0.0.189
+- Update `golangci-lint` and disable cache
+- Test with Go 1.18
+- Skip speed sensitive tests in GitHub actions
+- Release 0.1.257
+- Update to model 0.0.188
+- Update to metamodel 0.0.54
+- Update to metamodel 0.0.53
+- RCA vs Rca.
+- Add some webrca examples.
+- Release 0.1.256
+- Update to model 0.0.187
+- Updated model to v0.0.186
+- upgraded version to 0.1.254
+- fixed model version
+- updated model to v0.0.185
+- updated model 0.1.184
+- Update to model 0.0.183
+- Release 0.1.251
+- Update to model 0.0.182
+- Release v0.1.250
+- Update model to v0.0.181
+- Release 0.1.249
+- Update to model 0.0.180
+- Release 0.1.248
+- Update to model 0.0.179
+- Add impersonation test
+- Release 0.1.247
+- Update to metamodel 0.0.52
+- Release 0.1.246
+- Update to model 0.0.178
+- Release 0.1.245
+- Update to model 0.0.177
+- updated api-model to v0.0.176
+- Release v0.1.243
+- Update model to v0.0.175
+- Release v0.1.242
+- Update model to v0.0.174
+- Add an example program to list status updates for status-board.
+- Release v0.1.241
+- Update model to v0.0.173
+- added list_quota_cost example
+- Release 0.1.240
+- Update to model 0.0.172
+- Release 0.1.239
+- Revert "Don't crash in debug mode deserializing an empty response"
+- Update to metamodel 0.0.51
+- Check that `204 No Content` without body is accepted
+- Release 0.1.238
+- Update to model 0.0.170
+- Remove unnecessary environment variables
+- Increase sleep time of leadership flag test
+- Increase timeout of retry tests
+- Update to Ginkgo 2.1.1
+- Release 0.1.237
+- Update to metamodel 0.0.50
+- Update to model 0.0.169
+- Update to Ginkgo 2.1.0
+- Release v0.1.235
+- Update model to v0.0.168
+- Install metamodel with `go install`
+- Release 0.1.234
+- Use Go 1.17 for code generation tests
+- Update to version 4 of JWT library
+- Update to Ginkgo 2
+- Bump ocm-api-model to v0.0.167
+- Bump ocm-api-model version to v0.0.166
+- Double period used by leadership flag tests
+- Update changes
+- Bump ocm-api-model to v0.0.165
+- Update version of JSON interator
+- Update SQL drivers
+- Don't use `github.com/ghodss/yaml`
+- Require Go 1.16
+- Bump ocm api model to version 0.0.163
+- Bump ocm-api-model to v0.0.162
+- Remove unreliable leadership flag tests
+- Bump ocm-api-model to version 0.0.161
+- Update to metamodel 0.0.46
+- Use metamodel released binary
+- Bump ocm-api-model to version 0.0.160
+- Bump ocm-api-model to version 0.0.159
+- chore(version): bump to 0.1.225 [SDB-2509]
+- MatchJQ should require at least one result
+- Release 0.1.224
+- Update to model 0.0.156
+- Support pull-secret access token as a valid token.
+- Release 0.1.223
+- Update to model 0.0.155
+- Add missing `requirements.txt` file for GitHub actions
+- Release 0.1.222
+- Add changes to release descriptions
+- Rename `master` branch to `main`
+- Release 0.1.221
+- Fix bug - service log is not terminating properly
+- Update README.md examples (again)
+- Update README.md examples
+- Minor README.md fix
+- Use Markdown instead of AsciiDoc
+- Release 0.1.220
+- Add `RespondWithPatchedJSON`
+- Add `jq` testing utilities
+- Release v0.1.219
+- Update model to v0.0.153
+- Release 0.1.218
+- Update to metamodel 0.0.44
+- Release 0.1.217
+- bump api model 0.0.152
+- Release 0.1.216
+- Update to metamodel 0.0.43
+- Bump OCM API model to v0.0.151
+- Update `github.com/microcosm-cc/bluemonday` to 1.0.16
+- Release v0.1.214
+- Update model to v0.0.150
+- Release 0.1.213
+- Retry when `REFUSED_STREAM`
+- Update to metamodel 0.0.42
+- Release 0.1.212
+- Update model to 0.0.149
+- Replace expired CA certs for windows
+- Add support for digging inside maps
+- Copy data package from CLI
+- Fix typo in HTTP internal server error message
+- Update the version const
+- Update ocm-api-model version: remove archived clusters endpoint
+- Release 0.1.210
+- Update to model 0.1.147
+- Release v0.1.209
+- Bump API model to v0.0.146
+- Avoid hard-coded private keys
+- Release v0.1.208
+- Update model to v0.0.145
+- Release v0.1.207
+- updated model to v0.0.144
+- Update model version to include Add() limited support reason
+- Update model version to v0.0.142
+- Implement the `http.Flusher` interface
+- Run tests with Go 1.17
+- Run tests serially
+- Increase wait times of leadership flag tests
+- Fix retry wait
+- Increase timeouts for retry tests
+- Add Go submodule for examples
+- Add publish release workflow
+- Accept tokens without the `typ` claim
+- Opaque refresh tokens
+- Accept lower case token type
+- Enable tests that need a database
+- Use 'go install' instead of 'go get' to install tools
+- Fix token close to expire test
+- Remove `pr_check.sh`
+- Empty `pr_check.sh`
+- Add generate action
+- Remove tests from `pr_check.sh`
+- Build examples as part of the `test` job
+- Add GitHub action to lint Go code
+- Prepare to upgrade golangci-lint to 1.42.0
+- Add GitHub actions
+- Fix failing configuration file test
+- Update Ginkgo
+- Release 0.1.204
+- Change level of token retry messages
+- Remove incorrect comment
+- Release 0.1.203
+- Update to metamodel 0.0.39
+- Retry requests with body
+- Update ocm-api-model version to v0.0.141
+- Write failed request details to the debug log
+- Retry when EOF or connection reset by peer
+- Release 0.1.201
+- Reject impersonation
+- Retry when server sends go away before settings
+- Add 'check_optional_terms' and 'reduceClusterList' fields
+- dump: Add tests for dumpJson
+- Release 0.1.199
+- dump: Skip when writing null
+- Fix minor JSON debug issue
+- Use `golang-jwt/jwt` instead of `dgrijalva/jwt-go`
+- dump: Format output & redact sensitive fields using json helpers
+- internal: Switch to bluemonday to strip tags from html content
+- Release v0.1.198
+- updated model to v0.0.139
+- Release v0.1.197
+- Update model to v0.0.138
+- Release v0.1.196
+- Update model version to v0.0.137
+- Update to model version v0.0.136
+- Rename `Random` to `Jitter` and introduce timeouts
+- Add `MatchJSONTemplate`
+- Move `EvaluateTemplate` to a separate file
+- Fix typos
+- Release 0.1.194
+- Update to metamodel 0.0.38
+- Release 0.1.193
+- Update to model version v0.0.135
+- Fix initialization of metrics registerer
+- Release 0.1.191
+- Add leadership flag
+- Release 0.1.190
+- Don't use refresh token if have client credentials
+- Release 0.1.189
+- Don't require refresh token for client credentials grant
+- Release 0.1.188
+- Release v0.1.187
+- Update model to v0.0.133
+- Release v0.1.186
+- Update model to v0.0.132
+- Release 0.1.185
+- Add `All` and `Any` functions to the logging package
+- Release v0.1.184
+- Update ocm-api-model to v0.0.129
+- Update model to v0.0.128 and Release v0.1.183
+- Update model to v0.0.127
+- Release v0.1.182
+- Update model to v0.0.126
+- Release 0.1.181
+- Add support for authentication cookie
+- Release 0.1.180
+- Remove access token authentication
+- Release 0.1.179
+- Enable building with Go 1.13
+- Release v0.1.178
+- Update model to v0.0.125
+- Update of parameters to JobQueue#Push
+- Release 0.1.176
+- Added Arguments to JobQueue#Pop
+- Update `Logger` interface to include `Fatal` level
+- Add Fatal logging level
+- - JobQueue fixes and better example
+- 1. We're unable to support 'list Job Queues' 2. Proper example of Push/Pop for 'Job Queues'
+- Release v0.1.173
+- Bump model to v0.0.119
+- Bump ocm-api-model to 0.0.118
+- Add JobQueue service
+- Add JobQueue service
+- Release 0.1.170
+- Fix typo
+- Add _tolerance_ parameter to authentication handler
+- Delete example for get cluster metrics
+- Update to model version 0.0.115
+- Release v0.1.168
+- Bump ocm-api-model to v0.0.114
+- Release 0.1.167
+- Update to model 0.0.113
+- Use defaults from authentication package
+- Release v0.1.166
+- Updte to ocm-api-model v0.0.112
+- Move token logic to separate transport wrapper
+- Move client selection logic to separate type
+- Release 0.1.165
+- Fix wrong TLS server name
+- Release 0.1.164
+- Update to model 0.0.111
+- typo error
+- Change user agent to `OCM-SDK`
+- Release 0.1.163
+- Add support for HTTP/2 with TLS
+- Add `h2c` support
+- Add metrics handler wrapper
+- Reorder execution of tests
+- Remove logger from metrics transport wrapper
+- Enable compression
+- Release v0.1.162
+- Update model to v0.0.110
+- Bump ocm-api-model version
+- Run tests in parallel
+- Release 0.0.160
+- Update to model 0.0.108
+- Improve testing of metrics
+- Release v0.1.159
+- Update API model to v0.0.107
+- Add metrics package
+- Relase 0.1.158
+- Downgrade to Go 1.14
+- Release v0.1.157
+- Update model to v0.0.106 and metamodel to v0.0.36
+- Add trusted CA certificates for Windows
+- Missplaced return after warning from send
+- Accept Empty Reader as non-nil req body
+- Release 0.1.156
+- connection: Skip loading SystemCertPool on Windows
+- Update to model 0.0.105
+- Declare go 1.15 in go.mod
+- Release 0.1.155
+- Update to model 0.0.104
+- Release 0.1.154
+- Update to model 0.0.103
+- Release 0.1.153
+- Add support for customizing error responses
+- Add support for Unix sockets
+- Release v0.1.152
+- Update model to v0.0.102
+- bump version to 0.1.151
+- bump model to version 0.0.101
+- Add redirection tests
+- Reject URLs without scheme or host name
+- Load `os.Stdin` in dump configuration example
+- Load string if it doesn't look like a file
+- Load metrics subsystem configuration from file
+- Add method to read metrics subsystem
+- Rename `Metrics` to `MetricsSubsystem`
+- Create version 0.1.150
+- Bump to api-model v0.0.100
+- Move logging code to `logging` package
+- Release 0.1.149
+- Fix method to get base URL
+- Release 0.1.148
+- Add `!yaml` configuration tag
+- Fix minor issue in `MakeServer` test function
+- Add `!shell` configuration tag
+- Add test for binary configuration data
+- Release 0.1.147
+- Load connection configuration from file
+- Add support for loading trusted CA files
+- Release v0.1.146
+- Update model v0.0.99 and metamodel v0.0.35
+- Don't crash in debug mode deserializing an empty response
+- Add support for alternative URLs
+- Add `EvaluateTemplate` function for tests
+- Create version 0.1.145
+- Bump to api-model v0.0.98
+- Fix incorrect use of `%w`
+- Honour tokens context deadline
+- Wrap errors
+- Always use _Ginkgo_ writer from test servers
+- Always use _Ginkgo_ writer for logs of tests
+- Fix standard streams logger
+- Add functions to simplify tests that require responses
+- Release v0.1.144
+- Update model to v0.0.96
+- Bump SDK to version 0.1.143
+- Bump SDK to ocm-api-model v0.0.95
+- Release v0.1.142
+- Update model to v0.0.94
+- Allow disabling keep alive connections in the SDK connection transport
+- Update version to 0.1.141 using ocm-api-model v0.0.92
+- Release v0.1.140
+- Update model to v0.0.91
+- Release 0.1.139
+- use new limit for connection errors
+- Interpret HTML entities in logged summary of error response
+- update model to 0.0.90
+- Update api model to v0.0.89
+- Release 0.1.138
+- update model to 0.0.88
+- Release 0.1.137
+- update model to 0.0.87
+- Release 0.1.136
+- Bump sdk version
+- Update doc and bump sdk version
+- Bump ocm-api-model version
+- Update to api model v0.0.84
+- Release v0.1.133
+- Update metamodel to v0.0.33
+- increase the limit/size of content summary
+- Release v0.1.132
+- Update model to v0.0.83
+- Release 0.1.131
+- Support http/s proxy
+- Release v0.1.130
+- Update model to v0.0.82
+- Release v0.1.129
+- Request a token valid for longer than 1 min
+- Update version
+- go mod tidy
+- Create new SDK version v0.1.127
+- Release 0.1.126
+- update ocm-api-model to 0.0.79
+- Release v0.1.125
+- model: Update to v0.0.78
+- Release v0.1.124
+- Allow auth header of type AccessToken
+- Release v0.0.123
+- Update to model v0.0.77
+- Update to metamodel v0.0.32
+- Set token expiry function public
+- "got tokens on attempt 1" is not interesting
+- Add tests for request metrics
+- Create a new version
+- Update changes
+- Assume expiration 0 when no expiration included in the token
+- Fix panic from unexpected prometheus label
+- Add tests for token metrics
+- mark 0.1.121 as broken
+- Release 0.1.121
+- Print golangci-lint version
+- lint
+- Better logging and metrics when retrying SSO
+- [refactor] use explicit backoff.Permanent for non-500 errors
+- Release 0.1.120
+- Update to model 0.0.76
+- Bump version
+- Add unit tests
+- Remove redundant mock hanlers
+- Fix linter issues
+- Perform access token retry only when receiving http 5xx code + fix UT
+- Fix missing code assingment
+- Support retry when fetching access token
+- Release v.0.1.118
+- Update to ocm-api-model 0.0.75
+- Update version
+- Fix example
+- bump ocm api model to 0.0.74
+- Release v0.1.116
+- Update model to v0.0.73
+- Added support for http PUT method
+- Release v0.1.115
+- Update metamodel to v0.0.31 and model to v0.0.72
+- Update the version
+- Upgrade ocm-api-model
+- Release v0.1.113
+- Update to model v0.0.70
+- update sync set example
+- improve error response from gateway
+- Update to model v0.0.69 and release v0.1.112
+- Release v0.1.111
+- Update to model v0.0.67
+- Update v0.1.110 changes
+- Update SDK with latest version of API model
+- Add syncsets example
+- Release 0.0.109
+-  Update to model v0.0.65
+- Update to metamodel v0.0.30
+- Update version to 0.1.108
+- Update to model v0.0.64 and release v0.1.108
+- Release v0.1.107
+- Update to model v0.0.63
+- Release v0.1.106
+- Update to model v0.0.62 and metamodel v0.0.29
+- add a new label to metrics to identify the service
+- Use specific version of goimports as the latest gets error
+- Use specific version of goimports as the latest gets error
+- Use specific version of ginkgo as later version failes on fetching
+- Tidy go modules
+- Add doc to version 0.1.105
+- Update to model version 0.0.59 - Feature Toggle support
+- Release v0.1.104
+- Release v0.1.103
+- Update to model v0.0.58
+- Release 0.1.102
+- Update to model v0.0.57 and metamodel v0.0.28
+- make: Allow passing local copy of model and metamodel
+- Release 0.1.101
+- Update to model 0.0.56
+- Release 0.1.100
+- Update to model 0.0.55
+- Release 0.1.99
+- Update to model 0.0.54 and metamodel 0.0.27
+- Release 0.1.98
+- Update to model 0.0.53
+- Release 0.1.97
+- Update to model 0.0.52
+- Release 0.1.96
+- Update to model 0.0.50
+- Release 0.1.95
+- Update to model 0.0.48
+- Release 0.1.94
+- Update to model 0.0.47
+- Release 0.1.93
+- Update to model 0.0.46
+- Release 0.1.92
+- Update to model 0.0.45
+- Update to model 0.0.44
+- Release 0.1.91
+- Update to model 0.0.42
+- Release 0.1.90
+- Request new tokens when refresh grant retursn `invalid_grant`
+- Add cookie tests
+- Add tests for client credentials grant
+- Check JSON response content type
+- Add cookie support
+- Release 0.1.89
+- Update to metamodel 0.0.26
+- Release 0.1.88
+- Update to metamodel 0.0.25
+- Remove service and version parametrs from authentication handler
+- Release 0.1.87
+- Update to metamodel 0.0.24
+- Preserve order of debug JSON
+- Release 0.1.86
+- Update to model 0.0.41
+- Release 0.1.85
+- Update to metamodel 0.0.23
+- ClusterOperatorMetricExample
+- Release 0.1.84
+- Update to model 0.0.40
+- Fix comments in authentication handler
+- Remove duplicated authentication tests
+- Release 0.1.83
+- Update to model 0.0.39
+- check non-json response and return error
+- Release 0.1.82
+- Update to model 0.0.38
+- Fix typos
+- Add UT for connection transport wrapper
+- Release 0.1.81
+- Add ability to intercept request and response using a trasnport middleware of type http.RoundTripper
+- Fix typos
+- Release 0.1.80
+- Add body details in case of error from token provider
+- Release 0.1.79
+- Update to metamodel 0.0.22
+- Release 0.1.78
+- Update to metamodel 0.0.21
+- Fix URL prefix for the logs service
+- Release 0.1.77
+- Update to model 0.0.37
+- Don't require Go 1.13
+- Release 0.1.76
+- Update to model 0.0.36
+- Add support to CurrentAccess
+- Release 0.1.75
+- Release 0.1.74
+- Update to model version 0.0.33
+- Release 0.1.73
+- Update to model 0.0.32
+- Release 0.1.72
+- Update to model 0.0.31
+- Release 0.1.71
+- Don't log token errors
+- Send `WWW-Authenticate` response header
+- Send 401 instead of 511
+- Release 0.1.70
+- Add authentication handler
+- Update to metamodel 0.0.20
+- Fix _godoc_ link
+- Release 0.1.69
+- Update to model 0.0.30
+- Release 0.1.68
+- Update to metamodel 0.0.19
+- Release 0.1.67
+- Don't check kinds of add-ons installations
+- Release 0.1.66
+- Update to model 0.0.29
+- Release 0.1.65
+- Update to model 0.0.28
+- Release 0.1.64
+- Update to model 0.0.27
+- Release 0.1.63
+- Update to model 0.0.26
+- Fix metrics example
+- Release 0.1.62
+- Update to model 0.0.25
+- Release 0.1.61
+- Update to metamodel 0.0.18
+- Release 0.0.60
+- Release 0.1.59
+- Update to model 0.0.23
+- Release 0.1.58
+- Update to metamodel 0.0.16
+- Release 0.1.57
+- Update to metamodel 0.0.15
+- Release 0.1.56
+- Update to model 0.0.22
+- Release 0.1.55
+- Add example showing how to sync add-ons
+- Update to model 0.0.21
+- Release 0.1.54
+- Update to metamodel 0.0.14
+- Drop support for _developers.redhat.com_
+- Release 0.1.53
+- Update to model 0.0.20
+- Update to metamodel 0.0.13
+- Release 0.1.52
+- Update to model 0.0.19
+- Release 0.1.51
+- Update to model 0.0.18
+- Release 0.1.50
+- Update to metamodel 0.0.12
+- Release 0.1.49
+- Update to model 0.0.17
+- Release 0.1.48
+- Update to model 0.0.16
+- Update to metamodel 0.0.11
+- Release 0.1.47
+- Update to metamodel 0.0.10
+- Release 0.1.46
+- Update to model 0.0.15
+- Release 0.1.45
+- Update to model 0.0.14
+- Release 0.1.44
+- Update to model 0.0.13
+- Update to metamodel 0.0.9
+- Update to metamodel 0.0.8
+- Don't require POST body
+- Update contributing doc to mention examples and link to new ocm-api-model docs
+- Release 0.1.43
+- Add a CONTRIBUTING document detailing release process
+- Release 0.1.42
+- Update to ocm-api-model v0.0.12 to add authorizations/v1/[self_]access_review
+- Remove `authorizations` directory when generating code
+- Move `golangci-lint` configuration to a separate file
+- Use `GOPROXY`
+- Release 0.1.41
+- Update to model 0.0.11
+- Release 0.1.40
+- Update to model 0.0.10
+- Release 0.1.39
+- Update to model 0.0.9
+- Release 0.1.38
+- Update to model 0.0.8
+- Release 0.1.37
+- Update to model 0.0.7
+- Release 0.1.36
+- Update to model 0.0.6
+- README: Change client to sdk
+- Update to metamodel 0.0.7
+- Release 0.1.35
+- Release 0.1.34
+- Update to model 0.0.3
+- Use about to expire access token if needed
+- Check that `make generate` doesn't introduce changes
+- Release 0.1.33
+- Update to model v0.0.2
+- Release v0.1.32
+- Use metamodel v0.0.4
+- Fetch tags of model and metamodel
+- Release v0.1.31
+- Generated servers enforce trailing slashes as well send 'Content-Type' headers
+- README: s/uhc-cli/ocm-cli/
+- Release 0.1.30
+- Move to `github.com/openshift-online/ocm-sdk-go`
+- Release 0.1.29
+- Generated servers should handle trailing slashes in routes
+- Clone metamodel for code generation
+- Clone model for code generation
+- Rename main package
+- Release v0.1.28
+- Add Context parameter to Server methods
+- Release 0.1.27
+- Add servers to uhc-sdk-go
+- changes ClusterRegistration response type from long to string
+- Release 0.1.26
+- Add support for compute nodes metrics
+- Release 0.1.25
+- Allows override of source files, fixes data type in cluster reg response
+- Use Go modules
+- Use `ocm-metamodel-tool`
+- Add support for quota summary
+- Release 0.1.24
+- Select deprecated OpenID with user name and password
+- Release 0.1.23
+- Release 0.1.22
+- Fix names of glog logger builder methods
+- Don't warn about issuer URL when no token is provided
+- Release 0.1.21
+- Add getters for connection attributes
+- Release 0.1.20
+- Switch to _sso.redhat.com_
+- Remove 'admin' field from debug output of ClusterCredentials
+- Release 0.1.19
+- Expose header of response
+- Release 0.1.18
+- Add cluster `expiration_timestamp`
+- Release 0.1.17
+- Add dashboard name
+- Add get by index
+- Release 0.1.16
+- Add getters with presence flag to responses
+- Release 0.1.15
+- Add versions collection
+- Add missing subscription and account attributes
+- Release 0.1.14
+- Don't panic if there is no response
+- Expose request path and method. Can be used for logging.
+- Fix typo
+- Redact sensitive fields.
+- Fix type
+- Release 0.1.13
+- Add support for building list of structs
+- Release 0.1.12
+- Add Prometheus metrics
+- Add missing `os.Exit(1)`
+- Add delete subscrition support
+- Release 0.1.11
+- Increase token slack
+- Release 0.1.10
+- Improve context support
+- Release 0.1.9
+- Add cluster credentials resource
+- Release 0.1.8
+- Move metrics to `metrics` attribute
+- Fix version
+- Release 0.1.7
+- Prevent re-use of connections when fetching OpenID token
+- Fix typo in comments
+- Fix example in documentation
+- Fix typos
+- Improve documentation
+- Add missing example
+- Add logs collection
+- Fix exit code of list clusters example
+- Improve the list clusters example
+- Fix unmarshalling of list of class instances
+- Use typed interface in `README.adoc`
+- Update model
+- Release 0.1.6
+- Add typed interface
+- README: link to uhc-cli repo
+- Add `godoc` and license badges
+- Release 0.1.5
+- Fix package paths
+- init
+
+
 ## 0.1.510 Aug 19 2026
 
 - ROSAENG-13732 | feat: Implement BYO firewall rule endpoint verification
